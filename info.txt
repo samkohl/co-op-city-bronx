@@ -1,0 +1,125 @@
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+});
+</script>
+
+// adds color to the element
+$(document).ready(function(){
+    $("p").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+        },
+        mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+        },
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }
+    });
+});
+
+///hide an element with speed
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide(1000);
+    });
+});
+</script>
+
+///toggle function
+$("button").click(function(){
+    $("p").toggle();
+});
+
+<script>
+$(document).ready(function(){
+    $("p").hide();
+
+    $("button").click(function(){
+        $("p").show();
+    });
+});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+
+<button>Show</button>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+
+///to use fade toggle
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").fadeToggle(1000);
+    });
+});
+</script>
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").addClass("important blue");
+    });
+});
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+        });
+    });
+});
+</script>
+
+///animate toggle...position is important
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({
+            height: 'toggle'
+        });
+    });
+});
+</script>
+<div style="background:#98bf21;height:100px;width:100px;
+position:absolute;"><p>Mondays to Fridays from 10-11</p></div>
+
+
+$(document).ready(function(){
+    $("div").hover(function(){
+        $("h1, h2, p").toggleClass("blue");
+          });
+});
+
+
+Google fonts
+
+font-family: 'Lobster', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Satisfy', cursive;
+
+
+color family
+#E6F0FA // light blue family
+#faf0e6 // linen color
+#F2EAE1 // darker shad eof linen
